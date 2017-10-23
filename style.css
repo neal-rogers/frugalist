@@ -13,13 +13,35 @@ p a {
 
 /*****************************CSS CLASSES START HERE********************************/
 
+.frugalist-desc {
+  display: inline-block;
+  padding: .5em;
+}
+
+.frugalist-desc p {
+  max-width: 20em;
+  font-size: 1em;
+}
+
+.back-button {
+  border: solid 4px;
+  border-color: #FFB300;
+  border-radius: 50px;
+  color: #FFB300;
+  cursor: pointer;
+  display: inline-block;
+  width: 5em;
+  height: 65px;
+}
+
 .button {
   background-color: #FFB300;
-  border: none;
+  border: solid 4px;
+  border-color: #FFB300;
   border-radius: 50px;
   color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-size: 2em;
   letter-spacing: 2px;
   padding: 10px;
@@ -30,11 +52,14 @@ p a {
   height: 65px;
 }
 
+.button a {
+  text-align: center;
+}
+
 .button:hover {
-  background-color: #FFFFFF;
   border: solid 4px;
-  border-color: #FFB300;
-  color: #FFB300;
+  border-color: #BF7F00;
+  color: #FFFFFF;
   transition: ease-in .25s;
 }
 
@@ -49,28 +74,61 @@ p a {
 
 .logo {
   margin: auto;
-  padding: 20px;
+  padding: 10px;
+  position: relative;
+  top: 1.85em;
 }
 
 .navbar {
   background-color: rgba(45, 35, 46, .5);
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 1.5em;
   height: 110px;
-  margin: auto;
-  padding: 5px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+  list-style: none;
 }
 
 .navbar ul li a {
   display: inline-block;
-  min-width: 10em;
+}
+
+.navbar ul {
+  list-style: none;
 }
 
 .navbar li {
   display: inline-block;
+  min-width: 4em;
+  position: relative;
+  top: -1.75em;
+}
+
+.partner-logo {
+  display: inline-block;
+}
+
+.product-card {
+  background-color: #EAEAEA;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  height: 600px;
+  width: 400px;
+}
+
+.product-card p {
+  color: #000000;
+}
+
+.product-img {
+  background-color: #FFFFFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: auto;
+  padding: 1em;
+  height: 352px;
+  width: 400px;
 }
 
 .outer-container {
@@ -80,13 +138,30 @@ p a {
   min-height: 90vh;
 }
 
+.results-button {
+  border: solid 4px;
+  border-color: #FFB300;
+  border-radius: 50px;
+  color: #FFB300;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2em;
+  letter-spacing: 2px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 5em;
+  height: 65px;
+}
+
 .search-box {
   padding-top: 200px;
 }
 
 .text-box {
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #95989A;
   font-size: 1.5em;
   padding: 1em;
@@ -106,44 +181,26 @@ p a {
 body {
   background: linear-gradient(rgba(152, 73, 181, 1), rgba(0,0,0,1));
   font-family: "Istok Web";
-  font-weight: 300;
   line-height: 1.5;
+}
+
+h1 {
+  color: #000000;
+  font-size: 2em;
+}
+
+h2 {
+  color: #000000;
+  font-size: 3em;
+  text-align: left;
+  padding: 0 0 0 1.75em;
 }
 
 header {
   background-attachment: fixed;
-  background-position: center center;
   background-size: 100% auto;
   position: relative;
   text-align: center;
-}
-
-img {
-  padding: 1em .5em;
-  display: block;
-  margin: auto;
-}
-/*
-footer {
-  background-color: #9849B5;
-  font-size: 1.25em;
-  font-weight: 400;
-  text-align: center;
-}
-
-footer ul li {
-  display: inline-block;
-  padding: 15px;
-}
-
-footer ul li a {
-  display: inline-block;
-  height: 40px;
-  min-width: 8em;
-}
-*/
-form {
-
 }
 
 p {
@@ -158,13 +215,6 @@ p {
 p a {
   text-transform: none;
   color: #FFFFFF;
-  font-weight: 500;
-
-}
-
-li h3 {
-  font-size: 1.25em;
-  padding: .25em;
 }
 
 body, p {
@@ -187,7 +237,9 @@ body, p {
   }
 
   .logo {
-    max-width: 75%;
+    max-width: 80%;
+    position: relative;
+    top: .85em;
   }
 
   .inner-container h2 {
