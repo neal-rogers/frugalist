@@ -13,13 +13,24 @@ p a {
 
 /*****************************CSS CLASSES START HERE********************************/
 
+.frugalist-desc {
+  display: inline-block;
+  padding: .5em;
+}
+
+.frugalist-desc p {
+  max-width: 20em;
+  font-size: 1em;
+}
+
 .button {
   background-color: #FFB300;
-  border: none;
+  border: solid 4px;
+  border-color: #FFB300;
   border-radius: 50px;
   color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-size: 2em;
   letter-spacing: 2px;
   padding: 10px;
@@ -30,11 +41,14 @@ p a {
   height: 65px;
 }
 
+.button a {
+  text-align: center;
+}
+
 .button:hover {
-  background-color: #FFFFFF;
   border: solid 4px;
-  border-color: #FFB300;
-  color: #FFB300;
+  border-color: #BF7F00;
+  color: #FFFFFF;
   transition: ease-in .25s;
 }
 
@@ -50,11 +64,13 @@ p a {
 .logo {
   margin: auto;
   padding: 10px;
+  position: relative;
+  top: 1.85em;
 }
 
 .navbar {
   background-color: rgba(45, 35, 46, .5);
-  font-size: 1.25em;
+  font-size: 1.5em;
   height: 110px;
   text-align: center;
   text-transform: uppercase;
@@ -64,15 +80,34 @@ p a {
 
 .navbar ul li a {
   display: inline-block;
-  min-width: 10em;
 }
 
 .navbar ul {
-  list-style-type: none;
+  list-style: none;
 }
 
 .navbar li {
-  display: inline;
+  display: inline-block;
+  min-width: 4em;
+  position: relative;
+  top: -1.75em;
+}
+
+.product-card {
+  background-color: #EAEAEA;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  height: 600px;
+  width: 400px;
+}
+
+.product-img {
+  background-color: #FFFFFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 352px;
+  width: 400px;
 }
 
 .outer-container {
@@ -120,7 +155,7 @@ header {
 
 img {
   padding: 1em .5em;
-  display: block;
+  display: inline-block;
   margin: auto;
 }
 
@@ -163,7 +198,9 @@ body, p {
   }
 
   .logo {
-    max-width: 75%;
+    max-width: 80%;
+    position: relative;
+    top: .85em;
   }
 
   .inner-container h2 {
