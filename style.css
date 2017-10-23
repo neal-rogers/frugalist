@@ -49,19 +49,17 @@ p a {
 
 .logo {
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .navbar {
   background-color: rgba(45, 35, 46, .5);
   font-size: 1.25em;
-  font-weight: 400;
   height: 110px;
-  margin: auto;
-  padding: 5px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+  list-style: none;
 }
 
 .navbar ul li a {
@@ -69,8 +67,12 @@ p a {
   min-width: 10em;
 }
 
+.navbar ul {
+  list-style-type: none;
+}
+
 .navbar li {
-  display: inline-block;
+  display: inline;
 }
 
 .outer-container {
@@ -86,7 +88,7 @@ p a {
 
 .text-box {
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #95989A;
   font-size: 1.5em;
   padding: 1em;
@@ -106,13 +108,11 @@ p a {
 body {
   background: linear-gradient(rgba(152, 73, 181, 1), rgba(0,0,0,1));
   font-family: "Istok Web";
-  font-weight: 300;
   line-height: 1.5;
 }
 
 header {
   background-attachment: fixed;
-  background-position: center center;
   background-size: 100% auto;
   position: relative;
   text-align: center;
@@ -122,28 +122,6 @@ img {
   padding: 1em .5em;
   display: block;
   margin: auto;
-}
-/*
-footer {
-  background-color: #9849B5;
-  font-size: 1.25em;
-  font-weight: 400;
-  text-align: center;
-}
-
-footer ul li {
-  display: inline-block;
-  padding: 15px;
-}
-
-footer ul li a {
-  display: inline-block;
-  height: 40px;
-  min-width: 8em;
-}
-*/
-form {
-
 }
 
 p {
@@ -158,8 +136,6 @@ p {
 p a {
   text-transform: none;
   color: #FFFFFF;
-  font-weight: 500;
-
 }
 
 li h3 {
