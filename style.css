@@ -23,6 +23,17 @@ p a {
   font-size: 1em;
 }
 
+.back-button {
+  border: solid 4px;
+  border-color: #FFB300;
+  border-radius: 50px;
+  color: #FFB300;
+  cursor: pointer;
+  display: inline-block;
+  width: 5em;
+  height: 65px;
+}
+
 .button {
   background-color: #FFB300;
   border: solid 4px;
@@ -93,6 +104,10 @@ p a {
   top: -1.75em;
 }
 
+.partner-logo {
+  display: inline-block;
+}
+
 .product-card {
   background-color: #EAEAEA;
   border: none;
@@ -102,10 +117,16 @@ p a {
   width: 400px;
 }
 
+.product-card p {
+  color: #000000;
+}
+
 .product-img {
   background-color: #FFFFFF;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  margin: auto;
+  padding: 1em;
   height: 352px;
   width: 400px;
 }
@@ -115,6 +136,23 @@ p a {
   text-align: center;
   max-width: 100%;
   min-height: 90vh;
+}
+
+.results-button {
+  border: solid 4px;
+  border-color: #FFB300;
+  border-radius: 50px;
+  color: #FFB300;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2em;
+  letter-spacing: 2px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 5em;
+  height: 65px;
 }
 
 .search-box {
@@ -146,17 +184,23 @@ body {
   line-height: 1.5;
 }
 
+h1 {
+  color: #000000;
+  font-size: 2em;
+}
+
+h2 {
+  color: #000000;
+  font-size: 3em;
+  text-align: left;
+  padding: 0 0 0 1.75em;
+}
+
 header {
   background-attachment: fixed;
   background-size: 100% auto;
   position: relative;
   text-align: center;
-}
-
-img {
-  padding: 1em .5em;
-  display: inline-block;
-  margin: auto;
 }
 
 p {
@@ -171,11 +215,6 @@ p {
 p a {
   text-transform: none;
   color: #FFFFFF;
-}
-
-li h3 {
-  font-size: 1.25em;
-  padding: .25em;
 }
 
 body, p {
