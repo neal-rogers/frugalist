@@ -1,3 +1,8 @@
+#about {
+  background-color: #9849B5;
+  height: 65vh;
+}
+
 #circle {
   width: 10px;
   height: 10px;
@@ -14,7 +19,9 @@ p a {
 /*****************************CSS CLASSES START HERE********************************/
 
 .frugalist-desc {
+  border-radius: 5px;
   display: inline-block;
+  margin: .5em;
   padding: .5em;
 }
 
@@ -38,13 +45,11 @@ p a {
   background-color: #FFB300;
   border: solid 4px;
   border-color: #FFB300;
-  border-radius: 50px;
+  border-radius: 5px;
   color: #FFFFFF;
   cursor: pointer;
-  display: block;
   font-size: 2em;
   letter-spacing: 2px;
-  padding: 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -67,8 +72,8 @@ p a {
   clear: both;
   max-width: 100%;
   word-wrap: break-word;
+  margin: auto;
   min-width: 33%;
-  padding: 1em;
   min-height: 90vh;
 }
 
@@ -77,16 +82,21 @@ p a {
   padding: 10px;
   position: relative;
   top: 1.85em;
+  max-width: 175px;
 }
 
 .navbar {
   background-color: rgba(45, 35, 46, .5);
-  font-size: 1.5em;
-  height: 110px;
+  border-color: #9849B5;
+  font-size: 1em;
+  height: 65px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   list-style: none;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .navbar ul li a {
@@ -101,7 +111,7 @@ p a {
   display: inline-block;
   min-width: 4em;
   position: relative;
-  top: -1.75em;
+  top: -1.15em;
 }
 
 .partner-logo {
@@ -134,8 +144,10 @@ p a {
 .outer-container {
   display: block;
   text-align: center;
+  margin: auto;
   max-width: 100%;
   min-height: 90vh;
+  padding-top: 10em;
 }
 
 .results-button {
@@ -156,17 +168,20 @@ p a {
 }
 
 .search-box {
+  display: inline-block;
   padding-top: 200px;
 }
 
 .text-box {
+  background-color: transparent;
   border: none;
-  border-radius: 5px;
-  color: #95989A;
+  border-bottom: solid 2px;
+  border-color: #FFB300;
+  color: #FFFFFF;
   font-size: 1.5em;
-  padding: 1em;
+  padding: .5em;
   height: 65px;
-  width: 400px;
+  width: 310px;
 }
 
 /*****************************STANDARD CSS SELECTORS START HERE********************************/
@@ -179,7 +194,8 @@ p a {
 }
 
 body {
-  background: linear-gradient(rgba(152, 73, 181, 1), rgba(0,0,0,1));
+  background-color: #311F38;
+  /*background: linear-gradient(rgba(152, 73, 181, 1), rgba(0,0,0,1));*/
   font-family: "Istok Web";
   line-height: 1.5;
 }
@@ -198,7 +214,7 @@ h2 {
 
 header {
   background-attachment: fixed;
-  background-size: 100% auto;
+  padding: 10em;
   position: relative;
   text-align: center;
 }
@@ -240,10 +256,6 @@ body, p {
     max-width: 80%;
     position: relative;
     top: .85em;
-  }
-
-  .inner-container h2 {
-    font-size: 2em;
   }
 
   .navbar ul li a {
