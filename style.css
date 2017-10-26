@@ -1,5 +1,5 @@
 #about {
-  background-color: #9849B5;
+  background-color: rgba(45, 35, 46, .5);
   height: 65vh;
 }
 
@@ -48,13 +48,13 @@ p a {
   border-radius: 5px;
   color: #FFFFFF;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 2px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 310px;
-  height: 65px;
+  width: 8em;
+  height: 1.5em;
 }
 
 .button a {
@@ -74,22 +74,20 @@ p a {
   word-wrap: break-word;
   margin: auto;
   min-width: 33%;
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 .logo {
-  margin: auto;
-  padding: 10px;
   position: relative;
   top: 1.85em;
-  max-width: 175px;
+  max-width: 250px;
 }
 
 .navbar {
   background-color: rgba(45, 35, 46, .5);
   border-color: #9849B5;
   font-size: 1em;
-  height: 65px;
+  height: 6em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -111,7 +109,7 @@ p a {
   display: inline-block;
   min-width: 4em;
   position: relative;
-  top: -1.15em;
+  top: -1.25em;
 }
 
 .partner-logo {
@@ -194,7 +192,7 @@ p a {
 }
 
 body {
-  background-color: #311F38;
+  background-color: #532863;
   font-family: "Istok Web";
   line-height: 1.5;
 }
