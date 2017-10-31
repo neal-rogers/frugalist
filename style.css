@@ -50,14 +50,14 @@ p a {
   cursor: pointer;
   font-size: 1.5em;
   letter-spacing: 2px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
   width: 8em;
-  height: 1.5em;
+  height: 2.5em;
 }
 
 .button a {
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
 }
 
