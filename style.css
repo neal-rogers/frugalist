@@ -73,7 +73,7 @@ p a {
   max-width: 100%;
   word-wrap: break-word;
   margin: auto;
-  min-width: 33%;
+  /*min-width: 33%;*/
   min-height: 85vh;
 }
 
@@ -182,6 +182,37 @@ p a {
   width: 310px;
 }
 
+.payment-details {
+  background-color: #FFFFFF;
+  border: solid 2px;
+  border-color: #D3D3D3;
+  border-radius: 2px;
+  color: #000000;
+  font-size: 1em;
+  padding: .5em;
+  height: 2em;
+  max-width: 15em;
+  margin-bottom: 1em;
+}
+
+.payment-info {
+  display: inline-block;
+  padding: 2em;
+  position: relative;
+  top: 0em;
+  text-align: left;
+}
+
+.payment-info h3 {
+  color: #FFB300;
+  font-weight: 300;
+}
+
+.payment-info h4 {
+  font-size: .75em;
+  text-transform: uppercase;
+}
+
 /*****************************STANDARD CSS SELECTORS START HERE********************************/
 
 * {
@@ -214,6 +245,10 @@ header {
   padding: 10em;
   position: relative;
   text-align: center;
+}
+
+input:focus {
+  border-color: #FFB300;
 }
 
 p {

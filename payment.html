@@ -32,10 +32,51 @@
     </nav>
       <header>
         <div class="inner-container">
-          <form>
-            <input type="text" value="Let's find a deal..."><br>
-            <input type="Submit" value="Search">
-          </form>
+          <div class="payment-info">
+            <form>
+              <h3>Shipping Info</h3>
+                <h4>Full Name</h4>
+                  <input type="text" class="payment-details">
+                <h4>Address</h4>
+                  <input type="text" class="payment-details">
+                <h4>City</h4>
+                  <input type="text" class="payment-details">
+                <h4>Zip Code</h4>
+                  <input type="text" class="payment-details">
+                <h4>Country</h4>
+                  <input list="Country" class="payment-details">
+                      <datalist id="Country">
+                        <option value="United States">
+                        <option value="Afghanistan">
+                        <option value="Albania">
+                        <option value="Algeria">
+                        <option value="Andorra">
+                        <option value="Angola">
+                        <option value="Bahrain">
+                        <option value="Bangladesh">
+                        <option value="Barbados">
+                        <option value="Belarus">
+                        <option value="Belgium">
+                        <option value="...">
+                      </datalist>
+            </form>
+          </div>
+          <div class="payment-info">
+            <form>
+              <h3>Payment Info</h3>
+                <h4>Card Number</h4>
+                  <input type="text" class="payment-details">
+                <h4>Cardholder Name</h4>
+                  <input type="text" class="payment-details">
+                <h4>Expiration Date</h4>
+                  <input type="text" class="payment-details">
+                <h4>CVV</h4>
+                  <input type="text" class="payment-details">
+            </form>
+          </div>
+            <div class="button">
+              <a href="checkout.html">Checkout</a>
+            </div>
         </div>
       </header>
     <footer>
