@@ -30,35 +30,22 @@ p a {
   font-size: 1em;
 }
 
-.back-button {
-  border: solid 4px;
-  border-color: #FFB300;
-  border-radius: 50px;
-  color: #FFB300;
-  cursor: pointer;
-  display: inline-block;
-  width: 5em;
-  height: 65px;
-}
-
 .button {
   background-color: #FFB300;
   border: solid 4px;
   border-color: #FFB300;
-  border-radius: 5px;
   color: #FFFFFF;
   cursor: pointer;
   font-size: 1.5em;
   letter-spacing: 2px;
-  width: 8em;
+  line-height: 2.25em;
+  width: 12em;
   height: 2.5em;
 }
 
 .button a {
-  vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .button:hover {
@@ -69,11 +56,8 @@ p a {
 }
 
 .inner-container {
-  clear: both;
-  max-width: 100%;
   word-wrap: break-word;
   margin: auto;
-  /*min-width: 33%;*/
   min-height: 85vh;
 }
 
@@ -112,8 +96,47 @@ p a {
   top: -1.25em;
 }
 
-.partner-logo {
+.partner p {
   display: inline-block;
+}
+
+.partner-logo {
+  top: -1.25em;
+}
+
+.payment-details {
+  background-color: #FFFFFF;
+  border: solid 2px;
+  border-color: #D3D3D3;
+  color: #000000;
+  font-size: 1em;
+  padding: .5em;
+  height: 2em;
+  max-width: 15em;
+  margin-bottom: 1em;
+}
+
+.payment-info {
+  display: inline-block;
+  padding: 2em;
+  position: relative;
+  top: 0em;
+  text-align: left;
+}
+
+.payment-info h3 {
+  color: #FFB300;
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
+.payment-info h4 {
+  font-size: .75em;
+  text-transform: uppercase;
+}
+
+.payment-info h3, h4 {
+  letter-spacing: 1px;
 }
 
 .product-card {
@@ -121,12 +144,14 @@ p a {
   border: none;
   border-radius: 5px;
   display: inline-block;
+  margin: 1em;
   height: 600px;
   width: 400px;
 }
 
 .product-card p {
   color: #000000;
+  display: inline-block;
 }
 
 .product-img {
@@ -143,9 +168,9 @@ p a {
   display: block;
   text-align: center;
   margin: auto;
-  max-width: 100%;
   min-height: 90vh;
   padding-top: 10em;
+  width: 100%;
 }
 
 .results-button {
@@ -166,7 +191,7 @@ p a {
 
 .search-box {
   display: inline-block;
-  padding-top: 200px;
+  padding-top: 12.5em;
 }
 
 .text-box {
@@ -181,39 +206,8 @@ p a {
   width: 310px;
 }
 
-.payment-details {
-  background-color: #FFFFFF;
-  border: solid 2px;
-  border-color: #D3D3D3;
-  border-radius: 2px;
-  color: #000000;
-  font-size: 1em;
-  padding: .5em;
-  height: 2em;
-  max-width: 15em;
-  margin-bottom: 1em;
-}
-
-.payment-info {
+.top-deals {
   display: inline-block;
-  padding: 2em;
-  position: relative;
-  top: 0em;
-  text-align: left;
-}
-
-.payment-info h3 {
-  color: #FFB300;
-  font-weight: 300;
-}
-
-.payment-info h4 {
-  font-size: .75em;
-  text-transform: uppercase;
-}
-
-.payment-info h3, h4 {
-  letter-spacing: 1px;
 }
 
 /*****************************STANDARD CSS SELECTORS START HERE********************************/
@@ -299,9 +293,5 @@ body, p {
 
   .text-box {
     max-width: 75%;
-  }
-
-  img {
-    width: 100%;
   }
 }
