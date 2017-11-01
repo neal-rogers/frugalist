@@ -120,7 +120,7 @@ p a {
   display: inline-block;
   padding: 2em;
   position: relative;
-  top: 0em;
+  vertical-align: top;
   text-align: left;
 }
 
@@ -144,9 +144,9 @@ p a {
   border: none;
   border-radius: 5px;
   display: inline-block;
-  margin: 1em;
+  margin: .5em;
   height: 600px;
-  width: 400px;
+  width: 325px;
 }
 
 .product-card p {
@@ -160,8 +160,8 @@ p a {
   border-top-right-radius: 5px;
   margin: auto;
   padding: 1em;
-  height: 352px;
-  width: 400px;
+  height: 300px;
+  width: 325px;
 }
 
 .outer-container {
@@ -269,18 +269,6 @@ body, p {
 /*****************************@MEDIA QUERIES START HERE********************************/
 
 @media screen and (max-width: 768px) {
-  #about h1 {
-    font-size: 2.75em;
-  }
-
-  .button {
-    max-width: 75%;
-  }
-  
-  .button a {
-    font-size: 1em;
-  }
-
   .logo {
     max-width: 80%;
     position: relative;
@@ -291,7 +279,28 @@ body, p {
     min-width: 5.5em;
   }
 
+  .search-box {
+    display: block;
+    min-width: 75%;
+  }
+
   .text-box {
     max-width: 75%;
+  }
+
+  #about {
+    height: 100%;
+  }
+
+  #circle {
+    visibility: hidden;
+  }
+
+  img {
+    max-width: 75%;
+  }
+
+  .inner-container {
+    max-height: 55vh;
   }
 }
