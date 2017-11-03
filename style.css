@@ -64,7 +64,7 @@ p a {
 .inner-container {
   word-wrap: break-word;
   margin: auto;
-  min-height: 85vh;
+  height: 85vh;
 }
 
 .logo {
@@ -112,8 +112,9 @@ p a {
 
 .payment-details {
   background-color: #FFFFFF;
-  border: solid 2px;
+  border: solid 2.5px;
   border-color: #D3D3D3;
+  border-radius: 2px;
   color: #000000;
   font-size: 1em;
   padding: .5em;
@@ -193,6 +194,11 @@ p a {
   text-transform: uppercase;
   width: 5em;
   height: 1.65em;
+}
+
+.results-button:hover {
+  background-color: #FFB300;
+  color: #FFFFFF;
 }
 
 .search-box {
@@ -300,10 +306,6 @@ body, p {
 
   #circle {
     visibility: hidden;
-  }
-
-  img {
-    max-width: 75%;
   }
 
   .inner-container {
