@@ -18,10 +18,29 @@ p a {
 
 /*****************************CSS CLASSES START HERE********************************/
 
+.banner-text {
+	font-size: 4em;
+	color: #FFF;
+	line-height: 1em;
+	padding-top: 1.5em;
+}
+
 .deal {
   word-wrap: break-word;
   margin: auto;
   height: 60vh;
+}
+
+.featured-deal-item {
+	padding: .5em;
+}
+
+.featured-deals {
+	display: flex;
+}
+
+.featured-item-img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
 }
 
 .frugalist-desc {
@@ -236,23 +255,22 @@ body {
 }
 
 h1 {
-  color: #000000;
-  font-size: 1.75em;
+  color: #FFF;
+  font-size: 1em;
 }
 
 h2 {
-  color: #000000;
-  font-size: 3em;
+  color: #FFF;
+  font-size: .5em;
   text-align: left;
-  padding: 0 0 0 1.75em;
 }
 
 header {
   background-attachment: fixed;
   background-image: linear-gradient(to right, rgba(152, 73, 181, 1), rgba(255,0,0,0));
-  padding: 10em;
+  padding: 4.063em;
   position: relative;
-  text-align: center;
+  text-align: left;
   height: 500px;
 }
 
