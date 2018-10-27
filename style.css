@@ -74,10 +74,10 @@ p a {
 }
 
 .navbar {
-  background-color: rgba(45, 35, 46, .5);
+  background-color: #9849B5;
   border-color: #9849B5;
   font-size: 1em;
-  height: 6em;
+  height: 4.063em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -172,6 +172,7 @@ p a {
 }
 
 .outer-container {
+  background-color: #EFF2F3;
   display: block;
   text-align: center;
   margin: auto;
