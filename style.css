@@ -38,6 +38,13 @@ p a {
 .featured-deals {
 	display: flex;
 	margin: auto 0;
+	padding: 4em;
+}
+
+.featured-deals-text {
+	color: #000;
+	font-size: 2.5em;
+	line-height: 1em;
 }
 
 .featured-item-img {
@@ -89,8 +96,9 @@ p a {
 
 .inner-container {
   word-wrap: break-word;
-  margin: auto;
+  margin: 0 auto;
   height: 85vh;
+  position: relative;
 }
 
 .logo {
@@ -201,9 +209,8 @@ p a {
   background-color: #EFF2F3;
   display: block;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   min-height: 90vh;
-  padding-top: 10em;
   width: 100%;
 }
 
@@ -275,10 +282,11 @@ h2 {
 header {
   background-attachment: fixed;
   background-image: linear-gradient(to right, rgba(152, 73, 181, 1), rgba(255,0,0,0));
-  padding: 4.063em;
+  padding: 65px;
   position: relative;
   text-align: left;
   height: 500px;
+  display: block;
 }
 
 input:focus {
