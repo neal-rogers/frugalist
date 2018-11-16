@@ -1,6 +1,13 @@
 #about {
-  background-color: rgba(45, 35, 46, .5);
-  height: 65vh;
+	background-color: #EFF2F3;
+	display: inline-flex;
+	padding: 4em;
+	margin: 0 auto;
+}
+
+#about p {
+	color: #000;
+	font-size: 1.25em;
 }
 
 #circle {
@@ -18,17 +25,71 @@ p a {
 
 /*****************************CSS CLASSES START HERE********************************/
 
+.banner-text {
+	font-size: 4em;
+	color: #FFF;
+	line-height: 1em;
+	padding-top: 1.5em;
+}
+
+.category-items {
+	background-color: rgba(152, 73, 181, 0.5);
+	display: flex;
+	padding: 4em;
+}
+
+.category-item {
+	padding: .75em;
+}
+
+.contact-container {
+	
+}
+
 .deal {
   word-wrap: break-word;
   margin: auto;
   height: 60vh;
 }
 
+.featured-item {
+	padding: .75em;
+}
+
+.featured-deals {
+	display: flex;
+	margin: auto 0;
+	padding: 4em;
+}
+
+.featured-deals-text {
+	color: #000;
+	font-size: 2.5em;
+	line-height: 1em;
+	display: block;
+}
+
+.featured-item-img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
+}
+
+.featured-item-text {
+	font-size: 1.5em;
+	color: #000;
+	text-align: center;
+}
+
+.footer {
+	background-color: #9849B5;
+	height: 300px;
+	padding: 4em;
+}
+
 .frugalist-desc {
-  border-radius: 5px;
-  display: inline-block;
-  margin: .5em;
-  padding: .5em;
+	border-radius: 5px;
+	display: inline-block;
+	margin: .5em;
+	padding: .5em;
 }
 
 .frugalist-desc p {
@@ -56,15 +117,15 @@ p a {
 
 .button:hover {
   border: solid 4px;
-  border-color: #BF7F00;
   color: #FFFFFF;
   transition: ease-in .25s;
 }
 
 .inner-container {
   word-wrap: break-word;
-  margin: auto;
+  margin: 0 auto;
   height: 85vh;
+  position: relative;
 }
 
 .logo {
@@ -74,17 +135,17 @@ p a {
 }
 
 .navbar {
-  background-color: #9849B5;
-  border-color: #9849B5;
-  font-size: 1em;
-  height: 4.063em;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  list-style: none;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
+	background-color: #9849B5;
+	border-color: #9849B5;
+	font-size: 1em;
+	height: 65px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	list-style: none;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 
 .navbar ul li a {
@@ -175,9 +236,8 @@ p a {
   background-color: #EFF2F3;
   display: block;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   min-height: 90vh;
-  padding-top: 10em;
   width: 100%;
 }
 
@@ -203,20 +263,18 @@ p a {
 }
 
 .search-box {
-  display: inline-block;
-  padding-top: 12.5em;
+	display: inline-block;
+	padding-top: .5em;
 }
 
 .text-box {
-  background-color: transparent;
+  background-color: #FFFFFF;
   border: none;
-  border-bottom: solid 2px;
-  border-color: #FFB300;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 1.5em;
   padding: .5em;
-  height: 65px;
-  width: 310px;
+  height: 50px;
+  width: 450px;
 }
 
 .top-deals {
@@ -230,31 +288,34 @@ p a {
   color: #FFF;
   margin: auto;
   text-decoration: none;
+	line-height: 1.2em;
 }
 
 body {
-  background-color: #532863;
-  font-family: "Istok Web";
+  background-color: #EFF2F3;
+  font-family: "Nunito Sans";
   line-height: 1.5;
 }
 
 h1 {
-  color: #000000;
-  font-size: 1.75em;
+  color: #FFF;
+  font-size: 1em;
 }
 
 h2 {
-  color: #000000;
-  font-size: 3em;
+  color: #FFF;
+  font-size: .5em;
   text-align: left;
-  padding: 0 0 0 1.75em;
 }
 
 header {
   background-attachment: fixed;
-  padding: 10em;
+  background-image: linear-gradient(to right, rgba(152, 73, 181, 1), rgba(255,0,0,0));
+  padding: 65px;
   position: relative;
-  text-align: center;
+  text-align: left;
+  height: 500px;
+  display: block;
 }
 
 input:focus {
@@ -294,15 +355,14 @@ body, p {
 
   .search-box {
     display: block;
-    min-width: 75%;
+	height: 50px;
+	width: 450px;
   }
 
   .text-box {
-    max-width: 75%;
-  }
-
-  #about {
-    height: 100%;
+    display: block;
+	height: 50px;
+	width: 450px;
   }
 
   #circle {
