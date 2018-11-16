@@ -28,18 +28,17 @@ p a {
 .banner-text {
 	font-size: 4em;
 	color: #FFF;
-	line-height: 1em;
-	padding-top: 1.5em;
+	padding-top: 2em;
 }
 
 .category-items {
 	background-color: rgba(152, 73, 181, 0.5);
 	display: flex;
-	padding: 4em;
+	padding: .25em;
 }
 
 .category-item {
-	padding: .75em;
+	padding: 1.75em;
 }
 
 .contact-container {
@@ -53,20 +52,21 @@ p a {
 }
 
 .featured-item {
-	padding: .75em;
+	padding: .5em .5em .5em;
 }
 
 .featured-deals {
 	display: flex;
 	margin: auto 0;
-	padding: 4em;
+	padding: .5em ;
 }
 
 .featured-deals-text {
 	color: #000;
 	font-size: 2.5em;
 	line-height: 1em;
-	display: block;
+	display: flex;
+
 }
 
 .featured-item-img {
@@ -77,6 +77,7 @@ p a {
 	font-size: 1.5em;
 	color: #000;
 	text-align: center;
+    padding: .5em .25em;
 }
 
 .footer {
@@ -126,6 +127,7 @@ p a {
   margin: 0 auto;
   height: 85vh;
   position: relative;
+  padding: 2em 5em 5em;
 }
 
 .logo {
@@ -298,8 +300,9 @@ body {
 }
 
 h1 {
-  color: #FFF;
-  font-size: 1em;
+  	color: #FFF;
+  	font-size: 1em;
+	line-height: 1.05em;
 }
 
 h2 {
@@ -311,7 +314,7 @@ h2 {
 header {
   background-attachment: fixed;
   background-image: linear-gradient(to right, rgba(152, 73, 181, 1), rgba(255,0,0,0));
-  padding: 65px;
+  padding: 5em;
   position: relative;
   text-align: left;
   height: 500px;
@@ -372,4 +375,9 @@ body, p {
   .inner-container {
     max-height: 55vh;
   }
+	
+	.featured-item-img {
+		max-width: 150px;
+		max-height: 150px;
+	}
 }
